@@ -7,6 +7,7 @@ public class Main {
 
         EmployeeWage employee = new EmployeeWage();
         employee.calculateMonthlyWage();
+
         System.out.println("Monthly wage for the employee is Rs. " + employee.monthlyWage);
     }
 }

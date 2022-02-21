@@ -6,6 +6,7 @@ public class Main {
         System.out.println("Welcome to Employee Wage Computation Program.");
 
         EmployeeWage employee = new EmployeeWage();
-        System.out.println("Salary for the day is Rs. " + employee.dailyWage());
+        employee.calculateMonthlyWage();
+        System.out.println("Monthly wage for the employee is Rs. " + employee.monthlyWage);
     }
 }

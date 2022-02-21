@@ -6,6 +6,8 @@ public class EmployeeWage {
     int fullDayHour = 8;
     int partTimeHour = 4;
     int wagePerHour = 20;
+    int workingDaysPerMonth = 20;
+    int monthlyWage = 0;
 
     int isPresent(){
         int isPresent = (int) Math.floor((Math.random() * 10) % 3);
@@ -35,8 +37,14 @@ public class EmployeeWage {
                 dailyWage = wagePerHour * partTimeHour;
                 break;
         }
-
+        monthlyWage = monthlyWage + dailyWage;
         return dailyWage;
+    }
+
+    void calculateMonthlyWage(){
+        for(int i = 1; i <= workingDaysPerMonth; i ++){
+            System.out.println("Day " + i + ": Rs. " + dailyWage());
+        }
     }
 
 }

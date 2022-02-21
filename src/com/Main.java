@@ -7,6 +7,6 @@ public class Main {
         System.out.println("Welcome to Employee Wage Computation Program.");
 
         EmployeeWage employee = new EmployeeWage();
-        employee.isPresent();
+        System.out.println("Employee salary for today is Rs. " + employee.dailyWage());
     }
 }
